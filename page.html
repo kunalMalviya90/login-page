@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>College Details</h1>
+    <form onsubmit="return validateForm()" action="#">
+      <div class="form-group">
+        <label for="collegeName">College Name:</label>
+        <input type="text" id="collegeName" name="collegeName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="collegeID">College ID:</label>
+        <input type="text" id="collegeID" name="collegeID" required>
+      </div>
+
+      <div class="form-group">
+        <label for="courseName">Course Name:</label>
+        <input type="text" id="courseName" name="courseName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="page.js"></script>
+</body>
+
+</html>
